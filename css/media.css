@@ -1,0 +1,368 @@
+@media (max-width: 1024px){
+    .container{
+        width: 980px;
+    }
+    .header_wrapper{
+        justify-content: flex-start;
+    }
+    .logo{
+        width: 100%;
+    }
+    .nav{
+        margin-right: 20px;
+    }
+    .nav_toggle{
+      display: inline-block;
+    }
+
+    .nav .nav_items{
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0, .9);
+
+      padding: 20px 5%;
+      min-width: 60px;
+      height: 100%;
+      text-align: center;
+    }
+    .nav_item a{
+        color: #fff;
+    }
+    #nav_toggle:checked ~ .nav_items{
+      display: flex;
+      flex-direction: column;
+      
+  
+    }
+    .nav_item:not(:last-child){
+        margin-right: 0;
+     
+    }
+    .basket_link{
+        width: 120px;
+    }
+    .promo {
+        height: 400px;
+         background-size: 63%;
+         background-position: 360px 40px;
+    }
+    .services_grid {
+        width: 960px;
+
+
+        grid-column-gap: 20px;
+       
+    }
+    .about_wrapper{
+        align-items: center;
+    }
+    .about_left_tilte,
+    .about_left_description{   
+        width: 600px;
+    }
+    .about_left_tilte{
+        line-height: 50px;
+        
+    }
+    .about_right{
+        justify-content: space-between;
+       
+    }
+    .about_right_image img{
+       margin-top:45px;
+        width: 300px;
+    }
+    .about_right_title{
+        margin-top: 30px;
+    }
+    .statistic_item_text{
+        font-size: 14px;
+    }
+    .partners_link:not(:last-child)::after {
+
+        background-color: transparent;
+    }
+    .kart_info {
+        left: 50px;
+        top: 24px;       
+    }
+    .footer_text {
+        margin-left: 70px;
+    }
+
+}
+
+@media (max-width:768px){
+    .container{
+        width: 728px;
+    }
+    .basket_ico{
+        color: #a6a6a6;
+        margin-right: 10px;
+    }
+    .promo {
+        height: 380px;
+         background-size: 60%;
+         background-position: 290px 130px;
+    }
+    .promo_title{
+        padding-top: 30px;
+    }
+    .promo_description{
+        font-size: 18px;
+    }
+    
+    .services_grid {
+        width: 728px;
+        display:grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows:  auto auto;
+        grid-column-gap: 128px;
+        grid-row-gap: 40px;
+        margin: 60px 0;
+       
+    }
+    .about_wrapper{
+        flex-direction: column;
+    }
+    .about_left_tilte,
+    .about_left_description{   
+        width: 100%;
+    }
+    .about_right_image img{
+        margin-top:50px;
+         width: 100%;
+    }
+    .statistic_item_text{
+
+        font-weight: 500;
+    }
+    .partners_wrapper {
+        padding: 26px 30px 24px 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .partners_link{
+        width: 50%;
+        justify-content: center;
+    }
+    .partners_link:nth-last-child(-n+2){
+        margin-top: 15px;
+    }
+    .kart_info {
+        left: 5px;
+        top: 5px; 
+        width: 270px;
+    
+    }
+    .kart_info_title,
+    .kart_info_text,
+    .kart_info_tel,
+    .kart_info_link{
+        margin-left: 25px;
+    }
+    .kart_info_title{
+        padding-top: 25px;
+    }
+    .footer_wrapper {
+       justify-content: space-between;
+    }
+    .footer_text {
+        width: 385px;
+        margin-left: 0;
+
+    }
+}
+
+
+@media (max-width: 426px){
+    
+    .container{
+        width: 400px;
+      
+    }
+    .header_wrapper{
+        align-items: flex-end;
+    }
+    .basket_link{
+        font-size: 30px;
+        width: 100%;
+        align-self: center;
+        margin-right: 15px;
+    }
+    .basket{
+        order: 2;
+
+    }
+    .nav{
+        order: 3;
+
+    }
+
+    .basket_ico{
+        margin-right: 0;
+       
+        
+    }
+    .basket_signature{
+        display: none;
+    }
+    .promo{
+        background-image: none ;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promo_title,
+    .promo_description{
+        text-align: center;
+    }
+    .services_grid {
+        margin-top: 40px;
+        width: 400px;
+        grid-template-columns: 400px;
+        grid-template-rows:  auto auto auto;       
+    }
+
+    .services_item{
+       
+       margin: 0 auto;
+        align-items: center;
+    }
+
+    .about_wrapper{
+        margin-bottom: 40px;
+    }
+    .about_left_tilte{
+        margin-top: 0;
+    } 
+    .about_left_description,
+    .about_left_ul_title{
+        margin-bottom: 30px;
+    } 
+    .about_right_image{
+        margin-bottom: 10px;
+    }
+    .about_right_title{
+        margin-bottom: 20px;
+    }
+    .partners_link{
+        width: 100%;
+
+    }
+    .partners_link:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .partners_link:nth-last-child(-n+2){
+        margin-top: 0;
+    }
+    .kart{
+        padding-top: 15px;
+    }
+    .kart_info{
+        position:static;
+        margin: 0 auto;
+    }
+    .kart_info_tel{
+        margin-bottom: 30px;
+    }
+    .footer_wrapper{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: 40px 0;
+    }
+    .footer_link{
+        width: 69px;
+        height: 69px;
+    }
+    .footer_text{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media (max-width: 376px){
+    .container{
+        width: 346px;
+    }
+
+  
+    .promo_title,
+    .about_left_tilte{
+        font-size: 40px;
+    }
+    .promo_title,
+    .promo_description{
+        width: 100%;
+    }
+    .services_grid {
+        width: 346px;
+        grid-template-columns: 346px;
+       
+    } 
+
+
+     .footer_text {
+        width: 340px;
+
+    }
+     .footer_title{
+        font-size: 28px;
+     }
+}
+
+
+@media (max-width: 320px){
+
+    .container{
+        width: 300px;
+    }
+
+    .logo_img{
+      width: 100px;  
+    }
+
+   
+    .services_grid{
+        width: 300px;
+        grid-template-columns: 300px;
+    }
+    .about_left_tilte{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .about_left_item{
+        padding-left: 27px;
+    }
+    .about_left_item:before{
+        width: 15px;
+    }
+    .about_right_title{
+        text-align: center;
+    }
+    .about_right_statistic{
+        flex-direction: column;
+        
+    }
+    .about_right_statistic_item:not(:last-child){
+        margin-right: 0;
+    }
+    .statistic_item_procent{
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    .statistic_item_text{
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+    .footer_text {
+        width: 300px;
+
+    }
+}
